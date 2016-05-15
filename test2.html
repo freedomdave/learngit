@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {
+			width:500px ;
+			height:300px;
+			margin: -150px 0 0 -250px;
+			position: absolute;
+			left:50%;
+			top:50%;
+			background-color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<script src="jquery-1.11.1.js"></script>
+	<script>
+
+		// function	b(x,y,a){
+		// 	a=10;
+		// 	alert(a)
+		// }
+
+		// b(1,2,3);
+
+		function test(){
+			var a = 1;
+			setTimeout(function(){
+				alert(3);
+				a=3;
+			},1000);
+			a=2;
+			setTimeout(function(){
+				alert(a);
+				a=4;
+			},3000)
+		}
+		test();
+		alert(0);
+
+
+	</script>
+</body>
+</html>

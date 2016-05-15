@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+    .header,
+    .footer{
+    	height: 100px;
+    	line-height: 40px;
+    	font-weight: bold;
+    	background-color:#bbb;
+    	text-align: center;
+    	} 
+   	.content{
+   		overflow: hidden;
+   		background-color:#a4e88c;
+   	} 
+   	.left{
+   		width: 100px;
+   		background-color: #E79F6D;
+   	} 
+   	.right{
+   		width:100px;
+   		background-color: #7BD;
+   	} 
+    .left,.right,.content{
+    	min-height: 200px;
+    	_height:200px;
+    } /*伸缩盒布局*/ 
+    .flex-container{
+    	display: flex;} 
+    .content{flex:1;} 
+    .left{order:-1;}
+</style>
+</head>
+<body>
+	
+	<div class="header">
+	    页头100px
+	</div>
+	<div class="main flex-container">
+	    <div class="content">
+	        中间自适应
+	    </div>
+	    <div class="left">
+	        左边宽100px左边宽100px左边宽100px
+	    </div>
+	    <div class="right">
+	        右边宽150px
+	    </div>
+	</div>
+	<div class="footer">
+	    页脚100px
+	</div>
+
+
+
+</body>
+</html>
